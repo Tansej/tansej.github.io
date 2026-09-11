@@ -6,3 +6,7 @@ body {
     background-color: var(--backgroundBlack);
     color: white;
 }
+
+a {
+    text-decoration: none;
+}
