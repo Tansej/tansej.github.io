@@ -1,13 +1,96 @@
 :root {
-    --backgroundBlack: rgb(20,20,20);
+    --backgroundBlack: rgb(20, 20, 20);
+    --colorGreen: rgb(0, 255, 0);
+    --colorGreenDark: rgba(0, 255, 0, 0.2);
+    --colorGreenDarkBG: rgba(0, 255, 0, 0.02);
+    --colorCyan: rgb(0, 200, 200);
+    --colorCyanDark: rgba(0, 200, 200, 0.2);
+    --colorCyanDarkBG: rgba(0, 200, 200, 0.02);
+    --colorMagenta: rgb(175, 0, 255);
+    --colorBlue: rgb(0, 150, 255);
+    --colorBlueDark: rgba(0, 150, 255, 0.2);
+    --colorBlueDarkBG: rgba(0, 150, 255, 0.02);
+    --linkBorder: 0.1em solid;
 }
 
 body {
     background-color: var(--backgroundBlack);
     color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+#menu1 {
+    border: var(--linkBorder) var(--colorGreenDark);
+    background-color: var(--colorGreenDarkBG);
+}
+
+#menu2 {
+    border: var(--linkBorder) var(--colorCyanDark);
+    background-color: var(--colorCyanDarkBG);
+}
+
+#menu3 {
+    border: var(--linkBorder) var(--colorBlueDark);
+    background-color: var(--colorBlueDarkBG);
+}
+
+h1 {
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: white;
+    padding: 0.5em;
+    transition: 0.25s;
+    border-bottom: var(--linkBorder) rgba(0, 0, 0, 0);
+}
+
+a:hover {
+    transition: 0.25s;
+}
+
+#menu1 a:hover {
+    color: var(--colorGreen);
+    border-bottom: var(--linkBorder) var(--colorGreen);
+}
+
+#menu2 a:hover {
+    color: var(--colorCyan);
+    border-bottom: var(--linkBorder) var(--colorCyan);
+}
+
+#menu3 a:hover {
+    color: var(--colorBlue);
+    border-bottom: var(--linkBorder) var(--colorBlue);
+}
+
+#m1Title {
+    color: var(--colorGreen);
+    padding: 0.5em;
+}
+
+#m2Title {
+    color: var(--colorCyan);
+    padding: 0.5em;
+}
+
+#m3Title {
+    color: var(--colorBlue);
+    padding: 0.5em;
+}
+
+.menuDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.25em;
+    margin: 1em;
+    text-align: center;
 }
