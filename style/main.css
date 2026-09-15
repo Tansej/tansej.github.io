@@ -18,7 +18,10 @@ body {
     color: white;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+}
+
+section {
+    width: 100%;
 }
 
 nav {
