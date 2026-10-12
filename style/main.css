@@ -97,3 +97,67 @@ a:hover {
     margin: 1em;
     text-align: center;
 }
+
+section {
+    margin: 1.5em;
+    padding: 1.5em;
+    border-radius: 0.5em;
+}
+
+article img {
+    max-width: 500px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 3em;
+}
+
+.firstChapter {
+    border: var(--linkBorder) var(--colorGreenDark);
+    background-color: var(--colorGreenDarkBG)
+}
+
+.secondChapter {
+    border: var(--linkBorder) var(--colorCyanDark);
+    background-color: var(--colorCyanDarkBG)
+}
+
+.thirdChapter {
+    border: var(--linkBorder) var(--colorBlueDark);
+    background-color: var(--colorBlueDarkBG)
+}
+
+.firstChapter h1 {
+    color: var(--colorGreen);
+}
+
+.secondChapter h1 {
+    color: var(--colorCyan);
+}
+
+.thirdChapter h1 {
+    color: var(--colorBlue);
+}
+
+.green {
+    color: var(--colorGreen);
+}
+
+.cyan {
+    color: var(--colorCyan);
+}
+
+.blue {
+    color: var(--colorBlue);
+}
+
+.highlight {
+    font-weight: bold;
+}
