@@ -40,36 +40,100 @@
             </div>
         </nav>
     </header>
+
+    <section class="firstChapter" id="FirstSteps">
+        <h1>První krůčky</h1>
+        <article>
+            <h2>Program</h2>
+            <p>"Program je posloupnost instrukcí, které se provádí sekvenčně po sobě."</p>
+            <p>Jedná se o posloupnost jasně definovaných kroků, které při vykonání splní předem stanovený účel. Tyto
+                kroky jsou prováděny sekvenčně - postupně jeden po druhém. Program je možné popsat algoritmem nebo
+                zobrazit pomocí modelů a diagramů (UML). Implementace programu je ve vybraném programovacím jazyku. Pro
+                program se často používá synonymum software nebo dnes častěji aplikace.</p>
+            <p>Jak dojde k definování cíle programu? Jak zapadá do sebe analýza, popis algoritmem a samotná
+                implementace? Jak jsou definovány jednotlivé dílčí kroky a jak se program nakonec "zrodí"? Právě tyto
+                otázky popisuje níže uvedený obrázek, kterému se jinak říká <span class="highlight green">Životní cyklus
+                    softwaru</span>. Je zde popsán právě každý krok v celém životu dané aplikace od počátku až do konce
+                či dalšího rozvoje.</p>
+            <img src="https://www.fegno.com/wp-content/uploads/2023/01/phases-in-sdlc-1024x1024.png"
+                alt="Software lifecycle image" title="Software lifecycle image" width="100%">
+            <p>Existuje více modelů, některé například seskupují určité fáze dohromady př. analýza + design. Ale
+                popisují tu stejnou věc, jen jinou mírou detailu.</p>
+            <p><span class="highlight green">1. Planning.</span> Prvotní fáze, ve které přichází nápad či myšlenka a
+                potřeba jejich realizace pomocí aplikace. Součástí fáze je prvotní plánování zahrnující aktivity jako
+                například odhad náročnosti, zda se aplikace/změna vyplatí vůbec realizovat nebo například posouzení
+                možných kapacit a termínu dodání. Výstupem je projektový plán.</p>
+            <p><span class="highlight green">2. Analysis.</span> Druhá fáze se zaměřuje už na samotnou analýzu (business
+                analýza). Během této fáze se běžně rozpadává původní nápad na jednotlivé bussiness požadavky a
+                zjišťování potřebných vstupů. Výstupem je seznam funkčních a nefunkčních business požadavků (BRQ set)
+                vytvořený BANem (Business Analytik). <br> Pozn. <span class="green">Funkční požadavek</span> - požadavek
+                na nějakou funkci, "co má
+                systém umět" - př. systém má umět zaregistrovat uživatele, systém má umět odeslat objednávku. <span
+                    class="green">Nefunkční
+                    požadavek</span> - požadavek na systém samotný, "jaký má systém být" - př. systém má být rychlý -
+                zpracování požadavku do 5 sekund,
+                systém má být zabezpečený, systém má být schopen obsloužit najednou až 100 klientů (zvládnout danou
+                zátěž).</p>
+            <p><span class="highlight green">3. Design.</span> Třetí fáze je design (technická analýza). Často lze najít
+                ještě kategorizace - rozložení na High-level design a Low-level design. <span class="green">High-level
+                    design</span> řeší vyšší
+                pohled na aplikaci jako například používané technologi, architekturu a design databáze. <span
+                    class="green">Low-level design</span>
+                naopak řeší více technické a detailní věci jako logiku jednotlivých komponent/modulů/aplikací,
+                jednotlivá rozhraní (API) nebo například integrace a strukturu dat. Analýza je zpracována analytikem
+                (ITAN) a výstupem jsou dokumenty popisující technické parametry spolu s modely a diagramy (UML).
+                Případně mohou být výstupem v určitých případech i algoritmy, v kontextu ČSOB ekvivalentem výstupu je
+                SRQ.</p>
+            <p><span class="highlight green">4. Implementation.</span> Čtvrtá fáze je implementace vytvořených
+                technických řešení jednotlivých požadavků. V této fázi vývojář/programátor píše kód a převádí analytické
+                vstupy na konkrétní implementaci ve vybrané technologii. Vedle programování hlavní logiky se zde i píšou
+                jednotkové testy (Unit testing), což zajišťuje základní kontrolu napsaných funkcí (př. aplikace
+                kalkulačka, která má funkci sčítání 2 čísel - test, že tato funkce funguje správně) a často kontrola
+                kódu nadrřízeným daného vývojáře při odevzdání (code review).</p>
+            <p><span class="highlight green">5. Testing.</span> Pátá fáze navazuji hned po vývoji, kdy je třeba dodané
+                řešení otestovat. Patří sem různé typy testů: <span class="green">regresní testy</span> (ověření, že
+                nové změny nerozbily současný stav), <span class="green">smoke testy</span> (rychlý test
+                nejdůležitějších funkcí systému - "že je aplikaci možné používat a že není úplně rozbitá"), <span
+                    class="green">systémové testy</span> (kompletní test celého systému, aby splňoval požadované
+                vlastnosti), <span class="green">end-to-end testy</span> (průběh od začátku až do konce jednotlivých
+                scénářů použití - use case), <span class="green">integrační testy</span> (testy propojení a API), <span
+                    class="green">uživatelské/akceptační testy</span> (často testuje zákazník na svém prostředí). O
+                testování se stará tým testerů, zároveň je časté i automatizované testování pomocí robotů. Pro testování
+                se vytváří <span class="green">testovací scénáře</span>.</p>
+            <p><span class="highlight green">6. Deployment</span></p>
+            <p><span class="highlight green">7. Maintenance</span></p>
+            <p>Při průchodu těmito fázemi se kruh uzavře a dostáváme se zpět na začátek. Kde ve fázi údržby je aplikace
+                až do jejího konce (vypnutí) nebo se v tu chvíli začne rozvíjet, kdy požadavek na nějakou změnu opět
+                začíná ve fázi 1.</p>
+        </article>
+    </section>
+    <section class="firstChapter" id="Theory">
+        <h1>Základní teorie</h1>
+    </section>
+    <section class="firstChapter" id="Principles">
+        <h1>Principy a techniky</h1>
+    </section>
+    <section class="secondChapter" id="Algo">
+        <h1>Algoritmy</h1>
+    </section>
+    <section class="secondChapter" id="Prog1">
+        <h1>Programování</h1>
+    </section>
+    <section class="secondChapter" id="Analysis">
+        <h1>Analýza</h1>
+    </section>
+    <section class="secondChapter" id="Database">
+        <h1>Databáze</h1>
+    </section>
+    <section class="thirdChapter" id="Prog2">
+        <h1>Programování II.</h1>
+    </section>
+    <section class="thirdChapter" id="Web">
+        <h1>Webové služby</h1>
+    </section>
+    <section class="thirdChapter" id="Theory2">
+        <h1>Technické pojmy</h1>
+    </section>
 </body>
-<section class="" id="FirstSteps">
-    <h1>První krůčky</h1>
-</section>
-<section class="" id="Theory">
-    <h1>Základní teorie</h1>
-</section>
-<section class="" id="Principles">
-    <h1>Principy a techniky</h1>
-</section>
-<section class="" id="Algo">
-    <h1></h1>
-</section>
-<section class="" id="Prog1">
-    <h1></h1>
-</section>
-<section class="" id="Analysis">
-    <h1></h1>
-</section>
-<section class="" id="Database">
-    <h1></h1>
-</section>
-<section class="" id="Prog2">
-    <h1></h1>
-</section>
-<section class="" id="Web">
-    <h1></h1>
-</section>
-<section class="" id="Theory2">
-    <h1></h1>
-</section>
 
 </html>
