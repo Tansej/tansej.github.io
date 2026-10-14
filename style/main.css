@@ -13,6 +13,10 @@
     --linkBorder: 0.1em solid;
 }
 
+* {
+    scroll-behavior: smooth !important;
+}
+
 body {
     background-color: var(--backgroundBlack);
     color: white;
@@ -21,7 +25,6 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
 }
 
 nav {
