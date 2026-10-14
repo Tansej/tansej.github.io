@@ -92,47 +92,203 @@
                 kódu nadrřízeným daného vývojáře při odevzdání (code review).</p>
             <p><span class="highlight green">5. Testing.</span> Pátá fáze navazuji hned po vývoji, kdy je třeba dodané
                 řešení otestovat. Patří sem různé typy testů: <span class="green">regresní testy</span> (ověření, že
-                nové změny nerozbily současný stav), <span class="green">smoke testy</span> (rychlý test
-                nejdůležitějších funkcí systému - "že je aplikaci možné používat a že není úplně rozbitá"), <span
-                    class="green">systémové testy</span> (kompletní test celého systému, aby splňoval požadované
+                nové změny nerozbily současný stav), <span class="green">systémové testy</span> (kompletní test celého
+                systému, aby splňoval požadované
                 vlastnosti), <span class="green">end-to-end testy</span> (průběh od začátku až do konce jednotlivých
                 scénářů použití - use case), <span class="green">integrační testy</span> (testy propojení a API), <span
                     class="green">uživatelské/akceptační testy</span> (často testuje zákazník na svém prostředí). O
                 testování se stará tým testerů, zároveň je časté i automatizované testování pomocí robotů. Pro testování
                 se vytváří <span class="green">testovací scénáře</span>.</p>
-            <p><span class="highlight green">6. Deployment</span></p>
-            <p><span class="highlight green">7. Maintenance</span></p>
-            <p>Při průchodu těmito fázemi se kruh uzavře a dostáváme se zpět na začátek. Kde ve fázi údržby je aplikace
-                až do jejího konce (vypnutí) nebo se v tu chvíli začne rozvíjet, kdy požadavek na nějakou změnu opět
-                začíná ve fázi 1.</p>
+            <p><span class="highlight green">6. Deployment.</span> V této fázi se vyvinutý a otestovaný software
+                "nasadí". Jedná se o spuštění/zpřístupní pro uživatele/zapnutí softwaru. Jedná se o fázi, kdy je
+                software uveden do provozu a může ho uživatel začít používat. Nasazení aplikace se někdy též označuje
+                jako release. Po nasazení je dobré provést <span class="green">smoke testy</span> (rychlý test
+                nejdůležitějších funkcí systému - "že je aplikaci možné používat a není rozbitá"). Je možné se setkat se
+                synonymem pro deployment (resp. aktivity související s touto fází) - DevOps nebo Provoz. Existují
+                primárně 2 varianty nasazení - <span class="green">On-Premise</span> nebo <span
+                    class="green">Cloud</span>. On-Premise varianta popisuje nasazení na vlastní server, zatímco
+                nasazení do cloudu je do externího datacentra - Azure, AWS, Google Cloud... V dnešní době se často
+                deployment řeší pomocí kontejnerů a kontejnerizace obecně. Kód hotové aplikace se tedy již neexportuje
+                jako spustitelná aplikace, která je nainstalována/spuštěna na serveru, ale generuje se z ní obraz
+                (image), který je spuštěn v kontejneru (speciální vytvořený prostor), kde se aplikace spustí. Ulehčuje
+                to update, jelikož není třeba složitě nahrazovat novou verzí, jen se nahraje nový image a spustí.</p>
+            <p><span class="highlight green">7. Maintenance.</span> Poslední fází je údržba nasazené aplikace. Mezi
+                aktivity patřící do této fáze je možné zmínit například sledování a vyhodnocování logů, bug fixing,
+                optimalizace a aktualizace.</p>
+            <br>
+            <p>V poslední fázi se nacházíme ve stavu, kdy vznikl nápad či požadavek, byl následně analyzován, navrhnut,
+                implementován, otestován, poté nasazen a je v provozu udržován. Diagram naznačuje, že poslední krok
+                uzavírá kruh a navazuje na první krok. V tuto chvíli může vzniknout požadavek na změny aplikace, přidání
+                nových funkcí apod.. A cyklus probíhá pro nové změny opět stejným způsobem znovu.</p>
+        </article>
+        <article>
+            <h2>Nástroje</h2>
+            <p>Při vývoji se využívají různé nástroje, zmíníme si základní kategorizaci a nejznámější příklady</p>
+            <p>Analytické nástroje sloužící k dělání modelů UML, designování a návrhu obrazovek a zobrazení algoritmů.
+                Př. Enterprise architect, Figma, Draw.io</p>
+            <p>Vývojářské nástroje sloužící k psaní kódu. Označováno obecně zkratkou IDE. Př. IntelliJ Idea, IntelliJ
+                Rider, NetBeans</p>
+            <p>Testovací nástroje sloužící k otestování aplikce. Existují různí roboti, co klikají na obrazovky, ale pro
+                testování API (simulace volání) se používá například Insomnia nebo Postman</p>
+            <p>Nasazovací nástroje sloužící k nasazení aplikace. Př. Docker</p>
+        </article>
+        <article>
+            <h2>Jmenné konvence</h2>
+            <p>Během psaní kódu není možné psát mezery do názvů proměnný, tříd, funkcí, tabulek... Existuje proto
+                několik konvencí, které se dodržují, aby byla zachována konzistence mezi designem, implementací a
+                dokumentací. Mezi nejznámější konvence patří:</p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </article>
     </section>
     <section class="firstChapter" id="Theory">
         <h1>Základní teorie</h1>
+        <article>
+            <h2>Algoritmus</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Proměnná</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Datový typ</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Pole</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Podmínka</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Cyklus</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Switch</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Funkce</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>OOP</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>API</h2>
+            <p></p>
+        </article>
     </section>
     <section class="firstChapter" id="Principles">
         <h1>Principy a techniky</h1>
+        <article>
+            <h2>Abstrakce</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Divide and conquer</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Coding principles - KISS (Keep it simple, stupid), DRY (Dont repeat yourself), YAGNI (you aint gonna need it), SRP (single responsibility principle), Document your code, Dont reinvent the wheel, Easy to read code</h2>
+            <p></p>
+        </article>
     </section>
     <section class="secondChapter" id="Algo">
         <h1>Algoritmy</h1>
+        <article>
+            <h2>JS příklady</h2>
+            <p></p>
+        </article>
     </section>
     <section class="secondChapter" id="Prog1">
         <h1>Programování</h1>
+        <article>
+            <h2>Programovací jazyky</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Java + OOP2</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>JS příklady</h2>
+            <p></p>
+        </article>
     </section>
     <section class="secondChapter" id="Analysis">
         <h1>Analýza</h1>
+        <article>
+            <h2>UML</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Diagramy</h2>
+            <p></p>
+        </article>
     </section>
     <section class="secondChapter" id="Database">
         <h1>Databáze</h1>
+        <article>
+            <h2>Relační DB</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Technologie + MSSQL</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>SQL/NOSQL</h2>
+            <p></p>
+        </article>
     </section>
     <section class="thirdChapter" id="Prog2">
         <h1>Programování II.</h1>
+        <article>
+            <h2>Architektura</h2>
+            <p></p>
+        </article>
     </section>
     <section class="thirdChapter" id="Web">
         <h1>Webové služby</h1>
+        <article>
+            <h2>Spring</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Security</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>REST</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Docker</h2>
+            <p></p>
+        </article>
     </section>
     <section class="thirdChapter" id="Theory2">
         <h1>Technické pojmy</h1>
+        <article>
+            <h2>Security</h2>
+            <p></p>
+        </article>
+        <article>
+            <h2>Sítě</h2>
+            <p></p>
+        </article>
     </section>
 </body>
 
